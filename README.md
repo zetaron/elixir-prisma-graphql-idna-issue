@@ -9,7 +9,7 @@ server-name_organization.prisma.sh.	128 IN CNAME random-aws-resource.eu-west-1.e
 ```
 
 The left side is called label and the right side `CNAME`, therefore the label would be `server-name_organization.prisma.sh.` and the `CNAME` consequently `random-aws-resource.eu-west-1.elb.amazonaws.com.`.
-Most implementations of the RFC don't seem to have a problem with this but some implement it very strictly, one of these more strict one is the [erlang idna package](https://hex.pm/packages/idna).
+Most implementations of the RFC don't seem to have a problem with the, by spec, illegal `_` character but some implement it very strictly, one of these more strict one is the [erlang idna package](https://hex.pm/packages/idna).
 
 > For you to be able to test this issue and hopefully find a solution I've setup a small test project over at [zetaron/elixir-prisma-graphql-idna-issue](https://github.com/zetaron/elixir-prisma-graphql-idna-issue), please follow the README on how to use it.
 
