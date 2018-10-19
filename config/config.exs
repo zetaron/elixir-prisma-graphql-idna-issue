@@ -28,3 +28,7 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env()}.exs"
+
+config :elixir_prisma_graphql_idna_issue,
+  prisma_url: "https://some-database_some-organization.prisma.sh/service/stage",
+  prisma_token: ""
